@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/inicial/perguntas.gd" type="Script" id=1]
+[ext_resource path="res://font/cursif/Cursif.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://font/roboto/Roboto-Medium.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+font_data = ExtResource( 4 )
+
+[node name="questionsscreen" type="Node2D"]
+position = Vector2( 91.9239, 43.8406 )
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -68.1977
+margin_top = -19.1122
+margin_right = 670.802
+margin_bottom = 55.8878
+custom_fonts/font = SubResource( 2 )
+text = "O que significa Ypiranga em Tupi- Guarani ?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnopcaoA" type="Button" parent="."]
+margin_left = 4.33664
+margin_top = 94.0613
+margin_right = 204.337
+margin_bottom = 194.061
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblA" type="Label" parent="btnopcaoA"]
+margin_left = 11.0
+margin_top = 17.0
+margin_right = 173.0
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 3 )
+text = "Rio ou água
+ vermelha"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnopcaoB" type="Button" parent="."]
+margin_left = 375.944
+margin_top = 95.1683
+margin_right = 575.944
+margin_bottom = 195.168
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblB" type="Label" parent="btnopcaoB"]
+margin_left = 20.7653
+margin_top = 16.0459
+margin_right = 114.765
+margin_bottom = 47.0459
+custom_fonts/font = SubResource( 3 )
+text = "Posto de 
+gasolina"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnopcaoC" type="Button" parent="."]
+margin_left = 10.6631
+margin_top = 263.178
+margin_right = 210.663
+margin_bottom = 363.178
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblC" type="Label" parent="btnopcaoC"]
+margin_left = 15.102
+margin_top = 32.0918
+margin_right = 178.102
+margin_bottom = 63.0918
+custom_fonts/font = SubResource( 3 )
+text = "Independência"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnopcaoD" type="Button" parent="."]
+margin_left = 376.888
+margin_top = 260.347
+margin_right = 576.888
+margin_bottom = 360.347
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblD" type="Label" parent="btnopcaoD"]
+margin_left = 20.7653
+margin_top = 28.3163
+margin_right = 114.765
+margin_bottom = 59.3163
+custom_fonts/font = SubResource( 3 )
+text = "Riacho"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="btnopcaoA" to="." method="_on_btnopcaoA_pressed"]
+[connection signal="pressed" from="btnopcaoB" to="." method="_on_btnopcaoB_pressed"]
+[connection signal="pressed" from="btnopcaoC" to="." method="_on_btnopcaoC_pressed"]
+[connection signal="pressed" from="btnopcaoD" to="." method="_on_btnopcaoD_pressed"]
