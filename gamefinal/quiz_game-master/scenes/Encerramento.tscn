@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Encerramento.gd" type="Script" id=2]
+[ext_resource path="res://video/ending.ogv" type="VideoStream" id=3]
+
+[node name="Encerramento" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_right = 1032.0
+margin_bottom = 605.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 1030.0
+margin_bottom = 601.0
+stream = ExtResource( 3 )
+autoplay = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]

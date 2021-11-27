@@ -1,0 +1,221 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://theme_font.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/level/level_game.gd" type="Script" id=2]
+[ext_resource path="res://resource/bd/bd_casa.tres" type="Resource" id=3]
+[ext_resource path="res://sound/incorrect.ogg" type="AudioStream" id=4]
+[ext_resource path="res://sound/correct.ogg" type="AudioStream" id=5]
+[ext_resource path="res://scenes/audiocasa.gd" type="Script" id=6]
+[ext_resource path="res://sound/audiodesafios.wav" type="AudioStream" id=7]
+
+[node name="level_game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+bd_quiz = ExtResource( 3 )
+color_right = Color( 0.219608, 1, 0, 1 )
+color_wrong = Color( 0.992157, 0, 0, 1 )
+
+[node name="audiocasa" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+autoplay = true
+script = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 515.802, 301.908 )
+scale = Vector2( 0.535033, 0.552702 )
+
+[node name="question_info" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -506.874
+margin_top = -23.8598
+margin_right = -137.874
+margin_bottom = 450.14
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="txt_question" type="Label" parent="question_info"]
+margin_right = 369.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+size_flags_vertical = 6
+align = 1
+autowrap = true
+
+[node name="image_holder" type="Panel" parent="question_info"]
+margin_top = 74.0
+margin_right = 369.0
+margin_bottom = 474.0
+rect_min_size = Vector2( 0, 400 )
+
+[node name="question_Image" type="TextureRect" parent="question_info/image_holder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="question_video" type="VideoPlayer" parent="question_info/image_holder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 89.72
+margin_right = -80.28
+margin_bottom = -17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="question_audio" type="AudioStreamPlayer" parent="question_info/image_holder"]
+
+[node name="question_holder" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -128.175
+margin_top = -576.0
+margin_right = 508.825
+margin_bottom = -9.0
+custom_constants/separation = 20
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="button_option_1" type="Button" parent="question_holder"]
+margin_right = 637.0
+margin_bottom = 126.0
+size_flags_vertical = 3
+align = 0
+
+[node name="button_option_2" type="Button" parent="question_holder"]
+margin_top = 146.0
+margin_right = 637.0
+margin_bottom = 273.0
+size_flags_vertical = 3
+align = 0
+
+[node name="button_option_3" type="Button" parent="question_holder"]
+margin_top = 293.0
+margin_right = 637.0
+margin_bottom = 420.0
+size_flags_vertical = 3
+align = 0
+
+[node name="button_option_4" type="Button" parent="question_holder"]
+margin_top = 440.0
+margin_right = 637.0
+margin_bottom = 567.0
+size_flags_vertical = 3
+align = 0
+
+[node name="game_over" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_info" type="Label" parent="game_over"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -223.607
+margin_top = -13.4947
+margin_right = 266.393
+margin_bottom = 135.505
+text = "Você Acertou:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_result" type="Label" parent="game_over"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -132.539
+margin_top = -245.432
+margin_right = 166.461
+margin_bottom = -96.4318
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_restart" type="Button" parent="game_over"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -195.0
+margin_top = -424.0
+margin_right = 205.0
+margin_bottom = -298.0
+text = "Jogar Novamente"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_retornar" type="Button" parent="game_over"]
+margin_left = 320.0
+margin_top = 314.96
+margin_right = 720.0
+margin_bottom = 440.96
+text = "Voltar para o Parque"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_encerramento" type="Button" parent="game_over"]
+margin_left = 320.0
+margin_top = 460.0
+margin_right = 720.0
+margin_bottom = 586.0
+text = "Fechar o jogo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="audio_correct" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="audio_incorrect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="txt_timer" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -457.373
+margin_top = 501.324
+margin_right = -174.373
+margin_bottom = 584.324
+text = "15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="finished" from="audiocasa" to="audiocasa" method="_on_audiocasa_finished"]
+[connection signal="pressed" from="game_over/button_restart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="game_over/button_retornar" to="." method="_on_button_retornar_pressed"]
+[connection signal="pressed" from="game_over/Button_encerramento" to="." method="_on_Button_encerramento_pressed"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

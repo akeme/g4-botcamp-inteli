@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "A casa do grito é construída de:"
+type = 0
+options = [ "Pedras ", "Tijolos adobe ", "Madeira", "Pau a pique" ]
+correct = "Pau a pique"

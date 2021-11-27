@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Em 1906 von Ihering estimou que a média anual de frequentadores entre 1985 e 1905 foi de:"
+type = 0
+options = [ "40 mil pessoas.", "2000 pessoas", "1000000 de pessoas", "1000 pessoas" ]
+correct = "40 mil pessoas."

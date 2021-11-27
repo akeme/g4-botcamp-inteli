@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Onde nasce o riacho do Ipiranga? "
+type = 0
+options = [ "Embaixo da estátua de Dom Pedro", "em Brasilia", "No Jardim Botânico de São Paulo.", "Em Fortaleza/CE" ]
+correct = "No Jardim Botânico de São Paulo."

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://scripts/resource/bd_quiz.gd" type="Script" id=1]
+[ext_resource path="res://resource/question/museu5.tres" type="Resource" id=2]
+[ext_resource path="res://resource/question/museu1.tres" type="Resource" id=3]
+[ext_resource path="res://resource/question/museu6.tres" type="Resource" id=4]
+[ext_resource path="res://resource/question/museu3.tres" type="Resource" id=5]
+[ext_resource path="res://resource/question/museu2.tres" type="Resource" id=6]
+[ext_resource path="res://resource/question/museu4.tres" type="Resource" id=7]
+
+[resource]
+script = ExtResource( 1 )
+bd = [ ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 4 ) ]

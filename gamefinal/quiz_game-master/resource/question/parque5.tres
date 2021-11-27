@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quais eram os habitantes da região durante o século XVI ?"
+type = 0
+options = [ "Holandeses", "Ninguém morava na região", "Os ET's", "Os Índios Guaianases" ]
+correct = "Os Índios Guaianases"

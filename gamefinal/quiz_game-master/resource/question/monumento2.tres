@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual evento histórico brasileiro encontram-se representada no monumento?"
+type = 0
+options = [ "Inconfidência Mineira (1789) ", "Copa do Mundo de 1970 e de 1994", "A copa do mundo 1950", "A Proclamação da República" ]
+correct = "Inconfidência Mineira (1789) "

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O Museu da Cidade de São Paulo foi constituído para:"
+type = 0
+options = [ "Conservação da memória e história", "Enaltecer o império", "Residência da família real ", "Hospital" ]
+correct = "Conservação da memória e história"

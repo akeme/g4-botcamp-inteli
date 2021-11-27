@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quando foi inaugurado o Monumento à Independência do Brasil?"
+type = 0
+options = [ "07 de setembro de 1922", "15 de novembro de 1950", "17 de Fevereiro de 1922", "25 de dezembro de 1875 " ]
+correct = "07 de setembro de 1922"

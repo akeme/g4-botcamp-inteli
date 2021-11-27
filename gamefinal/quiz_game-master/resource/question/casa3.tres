@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quando foi inaugurada estátua de dom Pedro I ?"
+type = 0
+options = [ "25/01/2020", "07/09/2000", "25/12/1990", "15/11/1975" ]
+correct = "25/01/2020"

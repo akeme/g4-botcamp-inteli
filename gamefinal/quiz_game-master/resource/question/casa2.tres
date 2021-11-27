@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como surgiu O nome “Casa do Grito”?"
+type = 0
+options = [ "Porque haviam fantasmas ", "Os moradores gritavam", "Por causa de uma pintura", "O sobrenome dono era GRITO" ]
+correct = "Esta casa aparece na pintura “Independência ou Morte"

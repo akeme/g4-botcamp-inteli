@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Como é o forro da casa do grito?"
+type = 0
+options = [ "um forro de gesso", "feito de plástico", "não possui forro", "o forro é de isopor" ]
+correct = "não possui forro"
